@@ -1,4 +1,4 @@
-name: spatial_args
+name: spatial_args2
 channels:
   - conda-forge
 dependencies:
@@ -11,4 +11,5 @@ dependencies:
   - pandas
   - matplotlib
   - IPython
-  - tskit_arg_visualizer
+  - pip:
+    - tskit_arg_visualizer
