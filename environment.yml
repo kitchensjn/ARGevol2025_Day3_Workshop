@@ -1,4 +1,4 @@
-name: spatial_args2
+name: spatial_args
 channels:
   - conda-forge
 dependencies:
@@ -13,3 +13,5 @@ dependencies:
   - IPython
   - pip:
     - tskit_arg_visualizer
+    - geoancestry
+    - "git+https://github.com/osmond-lab/sparg.git"
