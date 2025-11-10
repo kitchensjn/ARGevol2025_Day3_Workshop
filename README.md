@@ -13,7 +13,6 @@ This repository contains simulations, tree files, and notebooks used for the Day
 - Spatial simulations
     - Discrete space simulations with `msprime`
     - Continuous space simulations with `SLiM`
-        - Recapitation (if not covered in other workshops)
     - Extracting spatial information from simulated tree sequences
     - Visualizing lineage movements
     - Calculating dispersal rates from location data
