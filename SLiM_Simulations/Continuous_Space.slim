@@ -46,16 +46,13 @@ reproduction() {
     p1.individuals.setSpatialPosition(p1.pointUniform(N0)); // start with uniform distribution across range
 }
 
-early() {
-    //catn(community.tick); 
-    
+early() { 
     // survival probabilities
     inds = sim.subpopulations.individuals;
     inds[inds.age > 0].fitnessScaling = 0.0; // remove adults (ie enforce discrete generations)
 }
 
 late() {
-    //catn(p1.individualCount);
     i1.evaluate(p1); //calculate interactions
     sim.treeSeqRememberIndividuals(p1.individuals, permanent=F); //remember individuals only if ancestors of final population
 }
