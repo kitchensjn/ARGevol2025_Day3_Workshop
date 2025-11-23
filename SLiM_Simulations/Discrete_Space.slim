@@ -1,6 +1,6 @@
 initialize() {
 	initializeTreeSeq(retainCoalescentOnly=F);
-	defineConstant("fname", "./discrete_space.trees")
+	defineConstant("fname", "./ete.trees");
 	defineConstant("t",10000); 
 	initializeMutationRate(0);
 	initializeMutationType("m1", 0.5, "f", 0.0);
@@ -11,7 +11,7 @@ initialize() {
 
 1 early() {
 	community.rescheduleScriptBlock(s1, start=t, end=t); //set up end of simulation
-	metapopSide = 10; // number of subpops along one side of the grid
+	metapopSide = 2; // number of subpops along one side of the grid
 	metapopSize = metapopSide * metapopSide;
 	for (i in 1:metapopSize)
 		sim.addSubpop("p"+asString(i), 50);
